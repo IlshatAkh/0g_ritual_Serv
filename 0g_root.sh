@@ -18,6 +18,7 @@ systemctl daemon-reload
 systemctl enable ogd
 systemctl restart ogd
 
+sed -ie 's|"127.0.0.1:8545"|"0.0.0.0:8545"|' /home/ritual/.0gchain/config/app.toml
 
 sudo systemctl stop ogd
 cp /home/ritual/.0gchain/data/priv_validator_state.json /home/ritual/.0gchain/priv_validator_state.json.backup
