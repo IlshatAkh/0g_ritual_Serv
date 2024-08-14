@@ -60,7 +60,7 @@ systemctl daemon-reload
 systemctl enable zgstorage
 systemctl start zgstorage
 
-
+sed -ie 's|https://0g-new-rpc.dongqn.com|http://148.251.46.18:8545|' /home/ritual/0g-storage-kv/run/config.toml
 
 sudo tee /etc/systemd/system/zgs_kv.service > /dev/null <<EOF
 [Unit]
