@@ -104,7 +104,7 @@ After=network.target
 [Service]
 User=root
 WorkingDirectory=/home/ritual/0g-storage-node/run
-ExecStart=/home/ritual/0g-storage-node/target/release/zgs_node --config /home/ritual/0g-storage-node/run/config-testnet.toml --miner-key $miner_key --blockchain-rpc-endpoint http://195.201.175.107:28345/
+ExecStart=/home/ritual/0g-storage-node/target/release/zgs_node --config /home/ritual/0g-storage-node/run/config-testnet.toml --miner-key $miner_key --blockchain-rpc-endpoint http://148.251.46.18:8545
 Restart=on-failure
 RestartSec=10
 LimitNOFILE=65535
